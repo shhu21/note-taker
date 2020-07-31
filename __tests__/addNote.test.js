@@ -1,5 +1,3 @@
-const fs = require("fs");
-const path = require('path');
 const { addNote } = require('../lib/notes');
 const notes = require('../db/db.json');
 jest.mock('fs');
