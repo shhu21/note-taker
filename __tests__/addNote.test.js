@@ -18,8 +18,10 @@ test("adds a new note to the database (pass)", () => {
 // fail
 test("adds a new note to the database (fail)", () => {
   const newNote = {
-    "title": "Note 2",
-    "id": "2"
+    "title": "Note 1",
+    "text": "new note 1",
+    "id": "0",
+    "anotherKey": "key"
   };
 
   expect(addNote(newNote, notes)).toEqual({
